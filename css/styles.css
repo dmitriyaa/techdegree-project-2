@@ -1,0 +1,237 @@
+
+/*-----------------------------------------------
+   Base Elements Styles
+-----------------------------------------------*/
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Maven Pro', sans-serif;
+   color: #3a3a3a;
+   line-height: 1.6;
+   background-color: #2980B9;
+   text-align: center;
+}
+
+p {
+	font-size: 1.3em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+   max-width: 100%;
+}
+
+ul {
+   list-style: none;
+   padding-left: 0;
+}
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+   content: " ";
+   display: table;
+   clear: both;
+}
+
+/*-----------------------------------------------
+   Base Layout Styles
+-----------------------------------------------*/
+/* ---- Containers ---- */
+
+
+.main-container {
+   margin-top: 3em;
+   margin-bottom: 3em;
+}
+
+.secondary-container {
+   background-color: #fff;
+}
+
+.container {
+   padding-right: 1em;
+   padding-left: 1em;
+   margin-bottom: 2em;
+}
+
+/* ---- Navigation ---- */
+
+.main-nav {
+   list-style: none;
+}
+
+.main-nav li {
+   background-color: #18222B;
+   margin: .5em .5em;
+}
+
+.main-nav a {
+   text-transform: uppercase;
+   font-weight: 500;
+   color: white;
+   display: block;
+   padding: 13px 15px;
+}
+
+/* ---- About ---- */
+
+
+
+.prof-img {
+   width: 60%;
+}
+
+/* ---- Portfolio ---- */
+
+.portfolio {
+   padding-top: 3em;
+   padding-bottom: 3em;
+}
+
+.portfolio-list {
+   margin-top: 2.5em;
+}
+
+.portfolio-list li h3{
+   margin-top: 1.5em;
+   font-size: 1.6em;
+   font-weight: 500;
+}
+
+/* ---- Contact ---- */
+
+.contact ul li{
+   font-size: 1.3em;
+}
+
+.contact li a {
+   color: #18222B;
+}
+
+/* ---- Footer ---- */
+.footer-name {
+   float: left;
+   font-size: 1.3em;
+}
+
+.footer-nav {
+   margin: 0;
+   float: right;
+   text-transform: uppercase;
+   font-weight: 700;
+}
+
+footer nav {
+   border-top: 1px solid #fff;
+   padding-top: 1.5em;
+}
+
+.footer-desctop {
+   display: none;
+}
+
+/*-----------------------------------------------
+   Media Queries
+-----------------------------------------------*/
+@media (min-width: 769px) {
+
+   .container {
+      width: 95%;
+      margin: 0 auto;
+   }
+
+   .main-nav li {
+      display: inline-block;
+      background-color: inherit;
+   }
+
+   .about {
+      text-align: left;
+   }
+
+   .prof-img {
+      float: right;
+      max-width: 44%;
+      padding-left: 1.2em;
+   }
+
+   .portfolio-list li h3 {
+      margin-top: .8em;
+   }
+
+   .portfolio-list li {
+      float: left;
+      width: 46%;
+      margin: 2%;
+      font-size: .85em;
+   }
+
+   /*.portfolio-list li:nth-child(2n+1){
+      clear: both;
+   }*/
+
+   .contact{
+      margin-bottom: 4em;
+   }
+
+   .footer-desctop {
+      display: block;
+   }
+
+   .footer-desctop li  a{
+      margin-right: 10px;
+   }
+
+   .footer-mobile {
+      display: none;
+   }
+}
+
+@media (min-width: 1024px) {
+
+   .container {
+      width: 85%;
+      max-width: 1150px;
+   }
+
+   .name {
+      float: left;
+   }
+
+   .main-nav{
+      float: right;
+   }
+
+   .main-container {
+      margin-top: 1em;
+   }
+
+   .portfolio-list li {
+      float: left;
+      width: 28.3333%;
+      margin: 2%;
+   }
+
+   .portfolio-list li:nth-child(3n+1){
+      clear: both;
+   }
+}
