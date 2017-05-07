@@ -16,7 +16,7 @@ body {
 }
 
 p {
-	font-size: 1.3em;
+	font-size: 1.2em;
 	margin-bottom: 1.8em;
 }
 
@@ -59,8 +59,8 @@ ul {
 
 
 .main-container {
-   margin-top: 3em;
-   margin-bottom: 3em;
+   margin-top: 50px;
+   margin-bottom: 50px;
 }
 
 .secondary-container {
@@ -94,8 +94,6 @@ ul {
 
 /* ---- About ---- */
 
-
-
 .prof-img {
    width: 60%;
 }
@@ -103,8 +101,8 @@ ul {
 /* ---- Portfolio ---- */
 
 .portfolio {
-   padding-top: 3em;
-   padding-bottom: 3em;
+   padding-top: 2em;
+   padding-bottom: 1em;
 }
 
 .portfolio-list {
@@ -185,11 +183,8 @@ footer nav {
       font-size: .85em;
    }
 
-   /*.portfolio-list li:nth-child(2n+1){
-      clear: both;
-   }*/
-
    .contact{
+      margin-top: 3em;
       margin-bottom: 4em;
    }
 
