@@ -8,7 +8,7 @@
 }
 
 body {
-   font-family: 'Maven Pro', sans-serif;
+   font-family: 'Open Sans', sans-serif;
    color: #3a3a3a;
    line-height: 1.6;
    background-color: #2980B9;
@@ -57,10 +57,29 @@ ul {
 -----------------------------------------------*/
 /* ---- Containers ---- */
 
-
 .main-container {
    margin-top: 50px;
    margin-bottom: 50px;
+}
+
+.main-container:last-child {
+   margin-bottom: 10px;
+}
+
+.main-container,
+.main-container h2 {
+   color: #fff;
+}
+
+.main-container h1,
+.main-container h2,
+.main-container a {
+   color: #feeb6e;
+}
+
+.main-nav a:hover {
+   font-weight: 700;
+   color: #fff;
 }
 
 .secondary-container {
@@ -70,10 +89,14 @@ ul {
 .container {
    padding-right: 1em;
    padding-left: 1em;
-   margin-bottom: 2em;
+   /*margin-bottom: 2em;*/
 }
 
 /* ---- Navigation ---- */
+.name {
+   font-family: 'Josefin Sans', sans-serif;
+   font-weight: 700;
+}
 
 .main-nav li {
    background-color: #18222B;
@@ -82,8 +105,7 @@ ul {
 
 .main-nav a {
    text-transform: uppercase;
-   font-weight: 500;
-   color: white;
+   font-weight: 600;
    display: block;
    padding: 13px 15px;
 }
@@ -108,7 +130,20 @@ ul {
 .portfolio-list li h3{
    margin-top: 1.5em;
    font-size: 1.6em;
-   font-weight: 500;
+   font-weight: 600;
+}
+
+/* ---- Skills ---- */
+.skills {
+   border-top: 2px solid #2980B9;
+   padding-top: 1em;
+   padding-bottom: 2em;
+}
+
+.skills-list li {
+   float: left;
+   width: 46%;
+   margin: 2%;
 }
 
 /* ---- Contact ---- */
@@ -118,7 +153,12 @@ ul {
 }
 
 .contact li a {
-   color: #18222B;
+   color: #feeb6e;
+   border-bottom: 2px dotted #feeb6e;
+}
+
+.contact li a:hover {
+   border-bottom: 3px dotted #feeb6e;
 }
 
 /* ---- Footer ---- */
@@ -146,6 +186,7 @@ footer nav {
 /*-----------------------------------------------
    Media Queries
 -----------------------------------------------*/
+/* ---- >769 ---- */
 @media (min-width: 769px) {
 
    .container {
@@ -164,12 +205,7 @@ footer nav {
 
    .prof-img {
       float: right;
-      max-width: 44%;
       padding-left: 1.2em;
-   }
-
-   .portfolio-list li h3 {
-      margin-top: .8em;
    }
 
    .portfolio-list li {
@@ -183,6 +219,14 @@ footer nav {
       clear: both;
    }
 
+   .portfolio-list li h3 {
+      margin-top: .8em;
+   }
+
+   .skills-list li {
+      width: 21%;
+   }
+
    .contact{
       margin-top: 3em;
       margin-bottom: 4em;
@@ -192,16 +236,22 @@ footer nav {
       display: block;
    }
 
+   .footer-mobile {
+      display: none;
+   }
+
    .footer-desctop li  a{
       margin-right: 10px;
    }
 
-   .footer-mobile {
-      display: none;
-   }
 }
 
+/* ---- >1024 ---- */
 @media (min-width: 1024px) {
+
+   .main-container {
+      margin-top: 1em;
+   }
 
    .container {
       width: 85%;
@@ -216,20 +266,14 @@ footer nav {
       float: right;
    }
 
-   .main-container {
-      margin-top: 1em;
-   }
-
    .portfolio-list li {
-      float: left;
       width: 28.3333%;
-      margin: 2%;
    }
 
    .portfolio-list li:nth-child(3n+1){
       clear: both;
    }
-   
+
    .portfolio-list li:nth-child(2n+1){
       clear: none;
    }
