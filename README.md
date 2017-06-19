@@ -5,8 +5,8 @@ One of 12 **_Front End Web Development_** projects at [Treehouse Techdegree Cour
 In this project I build a responsive, mobile-first layout using HTML and CSS.
 
 * I transferred a provided mockup, into HTML structure
-* Then wrote CSS to style the page for a small mobile device first.
-* Then, using media queries, I added breakpoints to adjust the layout for wider tablet and desktop screens.
+* Then wrote CSS to style the page for a small mobile device first
+* Then, using media queries, I added breakpoints to adjust the layout for wider tablet and desktop screens
 
 ## Screenshot
 ![creenshot of the website](https://raw.githubusercontent.com/dmitriyaa/storage/master/screenshot--techdegree-project-2.png)
