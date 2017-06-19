@@ -1,4 +1,5 @@
-# Treehouse Techdegree Project 2
+# Responsive Layout
+## Treehouse Techdegree Project 2
 One of 12 **_Front End Web Development_** projects at [Treehouse Techdegree Courses](https://teamtreehouse.com/techdegree/front-end-web-development)
 
 ## Project Desription
@@ -8,7 +9,7 @@ In this project I build a responsive, mobile-first layout using HTML and CSS.
 * Then wrote CSS to style the page for a small mobile device first
 * Then, using media queries, I added breakpoints to adjust the layout for wider tablet and desktop screens
 
-## Screenshot
+## Screenshots
 ![creenshot of the website](https://raw.githubusercontent.com/dmitriyaa/storage/master/screenshot--techdegree-project-2.png)
 
 Here is a [link](https://dmitriyaa.github.io/techdegree-project-2) to live demo.
